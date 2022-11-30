@@ -31,7 +31,6 @@
     "VERSION:MAJOR": "npm version major",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
     "generate-icons": "node generate.js",
     "lint": "eslint \"src/**/*{.ts,.tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*{.ts,.tsx}\"",
