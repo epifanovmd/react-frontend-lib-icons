@@ -13,7 +13,7 @@ const plugins = [
   babel({
     babelHelpers: "bundled",
     exclude: "node_modules/**",
-    plugins: ["external-helpers", "babel-plugin-styled-components"],
+    plugins: ["external-helpers"],
   }),
   resolve(),
   commonjs(),

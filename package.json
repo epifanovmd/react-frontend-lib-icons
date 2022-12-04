@@ -37,7 +37,9 @@
     "prettier:fix": "prettier --parser typescript --write src/**/*.{ts,tsx}",
     "check-packages-updates": "yarn outdated"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^2.4.1"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
@@ -58,7 +60,6 @@
     "@typescript-eslint/parser": "^5.44.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
-    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.22.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -84,7 +85,6 @@
     "terser": "^5.16.0",
     "thread-loader": "^3.0.4",
     "ts-loader": "^9.4.1",
-    "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "typescript-eslint-parser": "^22.0.0",
     "webpack": "^5.75.0",
