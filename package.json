@@ -1,9 +1,9 @@
 {
   "name": "react-frontend-lib-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React frontend Icons",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
+  "main": "lib/cjs/src/index.js",
+  "module": "lib/esm/src/index.js",
   "types": "lib/esm/index.d.ts",
   "type": "module",
   "files": [
