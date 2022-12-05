@@ -7,6 +7,7 @@ import typescript from "@rollup/plugin-typescript";
 import autoprefixer from "autoprefixer";
 import postcss from "rollup-plugin-postcss";
 import reactSvg from "rollup-plugin-react-svg";
+import pkg from "./package.json" assert { type: "json" };
 
 const plugins = [
   external(),
@@ -44,7 +45,7 @@ export default [
       format: "cjs",
       preserveModules: true,
     },
-    external: [/node_modules/],
+    external: Object.keys(pkg.dependencies),
     plugins: [
       ...plugins,
       typescript({ tsconfig: "tsconfig.cjs.json", sourceMap: false }),
@@ -57,7 +58,7 @@ export default [
       format: "es",
       preserveModules: true,
     },
-    external: [/node_modules/],
+    external: Object.keys(pkg.dependencies),
     plugins: [
       ...plugins,
       typescript({ tsconfig: "tsconfig.mjs.json", sourceMap: false }),

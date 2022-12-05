@@ -37,9 +37,7 @@
     "prettier:fix": "prettier --parser typescript --write src/**/*.{ts,tsx}",
     "check-packages-updates": "yarn outdated"
   },
-  "dependencies": {
-    "tslib": "^2.4.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
